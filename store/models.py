@@ -35,5 +35,8 @@ class Product(models.Model):
         ordering = ('-created',)
 
     def __str__(self):
-        return self.title  
+        return self.title
+
+    def __repr__(self):
+        return Product  
 
